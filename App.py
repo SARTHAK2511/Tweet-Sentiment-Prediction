@@ -5,7 +5,7 @@ from nltk.tokenize import TweetTokenizer
 import re
 
 # Load your trained model
-logprior, loglikelihood = joblib.load(r'C:\Users\HP\Downloads\sentiment_model.joblib')
+logprior, loglikelihood = joblib.load(r'sentiment_model.joblib')
 
 # Function to preprocess and classify sentiment
 def classify_sentiment(tweet, logprior, loglikelihood):
